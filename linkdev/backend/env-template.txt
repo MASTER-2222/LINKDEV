@@ -1,0 +1,28 @@
+# Backend Environment Variables for LINKDEV
+# Copy this file to .env and fill in the values
+
+# Server Configuration
+PORT=3001
+NODE_ENV=development
+
+# Database Configuration (Supabase PostgreSQL)
+DATABASE_URL=postgresql://postgres:e%UKa?Y@2MdT7DH@db.yckdwoihjqjfijqagayk.supabase.co:5432/postgres
+
+# JWT Configuration
+JWT_SECRET=L/4U9oFuTtQUllARo0LS8adZThD9A4CHuQqXrslTE9HljUTjajlljXUPwC+2XHWXKO10S8kq6a0drhREyuqcxQ==
+JWT_EXPIRES_IN=7d
+
+# CORS Configuration
+FRONTEND_URL=http://localhost:5173
+
+# Backend URL (for image serving)
+# For development: http://localhost:3001
+# For production: https://your-backend-domain.com
+BACKEND_URL=http://localhost:3001
+
+# Local File Upload Configuration
+UPLOAD_DIR=uploads
+MAX_FILE_SIZE=5242880
+
+# Supported image formats
+ALLOWED_IMAGE_TYPES=image/jpeg,image/jpg,image/png,image/gif,image/webp

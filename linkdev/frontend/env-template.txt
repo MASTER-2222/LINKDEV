@@ -1,0 +1,16 @@
+# Frontend Environment Variables for LINKDEV
+# Copy this file to .env and fill in the values
+
+# API Configuration
+VITE_API_URL=http://localhost:3001/api
+
+# App Configuration
+VITE_APP_NAME=LINKDEV
+VITE_APP_VERSION=1.0.0
+
+# Development/Production Flag
+VITE_NODE_ENV=development
+
+# File Upload Configuration
+# Maximum file size for image uploads (in bytes)
+VITE_MAX_FILE_SIZE=5242880

@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: linkdev-backend
+    env: node
+    plan: starter
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        value: postgresql://postgres:e%25UKa%3FY%402MdT7DH@db.yckdwoihjqjfijqagayk.supabase.co:5432/postgres
+      - key: JWT_SECRET
+        value: L/4U9oFuTtQUllARo0LS8adZThD9A4CHuQqXrslTE9HljUTjajlljXUPwC+2XHWXKO10S8kq6a0drhREyuqcxQ==
+      - key: FRONTEND_URL
+        value: https://linkdev-frontend.onrender.com
+    healthCheckPath: /health
